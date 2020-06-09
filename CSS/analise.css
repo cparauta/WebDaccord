@@ -1,0 +1,253 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body {
+    width:100%;
+    font-family: "Open Sans",sans-serif;
+}
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+    z-index: 1 
+    
+    
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none; 
+    
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    
+    
+}
+ul li:hover a{
+    padding-left: 50px;
+    background-color: rgba(255, 255, 255, 0.24);
+    
+}
+.sidebar ul a i{
+    margin-right: 16px;
+
+}
+
+.sidebar .botoes_fundo{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.sidebar .botoes_fundo a{
+    display: block;
+    width: 50px;
+    background: #07204a;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 15px;
+    border-top-right-radius: 55px;
+    border-top-left-radius: 55px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,0.05);
+    color: #bdb8d7;
+}
+.sidebar .botoes_fundo a:hover {
+    padding-top: 5px;
+    background-color: rgba(255, 255, 255, 0.24);
+
+}
+#check{
+    display: none
+  
+}
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+    
+}
+label #btn{
+    position: fixed;
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+    
+}
+label #cancel{
+    position: fixed;
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+     
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+
+    
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+    
+
+}
+
+.audio{
+    position: fixed;
+    left: 720px;
+    top: 560px;
+    width: 100px;
+    background: #ffffff00;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+}
+h4{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.616);
+    margin: 30px 30px;
+    position: fixed;
+    left: 625px;
+    
+}
+
+
+.circulo {
+    position: fixed;
+    top:80px;
+    left:565px;
+}
+.sidebar .circulo a button{
+    display: inline-block;
+    background: #2e82b393;
+    width: 5px;
+    height: 5px;
+    line-height: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 20px;
+    color: #030202;
+    margin: 30px;
+}
+#cor {
+    background: #21a72893;
+}
+
+.sidebar .Instrumentos {
+    position: fixed;
+    top:200px;
+    right:150px;
+}
+.sidebar .Instrumentos button{
+    display: block;
+    width: 100px;
+    background: #1950ad93;
+    height: 10px;
+    line-height: 25px;
+    border-top-right-radius: 55px;
+    border-top-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    padding: 10px;
+    border-bottom: 20px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225, 225, 225, 0);
+    color: #f8f8f8;
+    margin-bottom: 30px;
+    
+}
+.Instrumentos button:hover {
+    background-color: rgba(10, 87, 252, 0.514);
+}
+.Instrumentos button:focus {
+    background-color: rgb(153, 111, 21);
+}
+@media screen and (max-width:800px) {
+    .sidebar{
+      display: block !important;
+    }
+  
+    .navigation-menu{
+      position: fixed;
+      width: 100%;
+      max-width: 400px;
+      background: #172b4d;
+      top: 90px;
+      right: 0;
+      display: none;
+      padding: 20px 40px;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+  
+    .navigation-menu::before{
+      content: "";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #172b4d;
+      position: absolute;
+      top: -10px;
+      right: 10px;
+    }
+  
+    .navigation-menu a{
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .navigation-menu.active{
+      display: block;
+    }
+  
+    .audio{
+      position: relative;
+      top: 500px;
+    }
+    .nomes p{
+      display: inline-block;
+      padding: 0 20px;
+    }
+  
+  }

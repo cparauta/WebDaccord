@@ -1,0 +1,300 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Open Sans",sans-serif;
+
+}
+body{
+  width:100%;
+  background: #7d849a81 ;
+}
+header{
+  position: relative;
+  height: 90px;
+  background: #3f5066;
+}
+
+.inner-width{
+  max-width: 10000px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.logo{
+  float: left;
+  position: absolute;
+  left: -100px;
+  padding: 5px 0;
+}
+
+.logo img{
+  width: 500px;
+  height: 80px;
+}
+
+.navigation-menu{
+
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+}
+
+.navigation-menu a{
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: .3s linear;
+}
+
+.navigation-menu a:hover{
+  background: #fff;
+  color: #2f3640;
+  transform: scale(1.1);
+}
+
+.navigation-menu i{
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+
+.about{
+  color: #0abde3;
+}
+
+.works{
+  color: #feca57;
+}
+
+
+.fa-question-circle{
+  color: #eff1f1;
+}
+
+.menu-toggle-btn{
+  position: relative;
+  float: right;
+  height: 90px;
+  line-height: 90px !important;
+  color: #fff;
+  font-size: 26px;
+  display: none !important;
+  cursor: pointer;
+}
+
+
+h1{
+  position: relative;
+  text-align: left;
+  font-size: 25px;
+  text-decoration: underline;
+  /*text-indent: 100px; paragrafo*/
+  padding-left: 38px; 
+  padding-top: 5px ;
+}
+#um{
+  position: relative;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 38px;
+  text-indent: 45px;
+  line-height: 1.4;
+  text-align: justify;
+
+}
+#dois{
+  position: relative;
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-right: 38px;
+  text-indent: 45px;
+  line-height: 1.4;
+  text-align: justify;
+
+}
+#tres {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-right: 38px;
+  text-indent: 45px;
+  line-height: 1.4;
+  text-align: justify;
+}
+#tresli{
+  list-style-position: inside;
+  position: relative;
+  padding-top: 5px;
+  padding-left: 18px;
+  padding-right: 38px;
+  text-indent: 45px;
+  line-height: 1.4;
+  text-align: justify;
+}
+#quatro {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 18px;
+  padding-right: 38px;
+  text-indent: 45px;
+  line-height: 1.4;
+  text-align: justify;
+}
+#cinco{
+  position: relative;
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-right: 38px;
+  text-indent: 45px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#graus{
+  position: relative;
+  margin-top: 30px;
+  left: 350px;
+  width: 40%;
+}
+/*#seis{
+  position: relative;
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-right: 38px;
+  text-indent: 45px;
+  line-height: 1.4;
+  text-align: justify;  
+}*/
+.links{
+  position: relative;
+  left: -250px;
+  top: 100px;
+
+}
+.links a:hover{
+  color:rgba(40, 92, 161, 0.486);
+}
+
+.links a{
+  display: inline-block;
+  padding: 0 50px;
+  color: rgb(40, 93, 161)
+}
+
+.links a:visited {
+  color: rgba(45, 66, 94, 0.596);
+}
+
+.links a:active {
+  color: rgb(99, 48, 47);
+}
+
+.nomes{
+  position: relative;
+  left: 760px;
+  top: 5px;
+}
+.nomes p{
+  display: inline-block;
+  padding: 0 62px;
+  padding-bottom: 30px;
+}
+
+.imagem{
+  text-align: center;
+}
+#imagem1:hover{
+  transform: scale(2);
+}
+#imagem2:hover{
+  transform: scale(2);
+}
+#imagem3:hover{
+  transform: scale(2);
+}
+#imagem4:hover{
+  transform: scale(2);
+}
+#imagem5:hover{
+  transform: scale(2);
+}
+#imagem6:hover{
+  transform: scale(2);
+}
+@media screen and (max-width:800px) {
+  .menu-toggle-btn{
+    display: block !important;
+  }
+
+  .navigation-menu{
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+    background: #172b4d;
+    top: 90px;
+    right: 0;
+    display: none;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+  .navigation-menu::before{
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #172b4d;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+  }
+
+  .navigation-menu a{
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navigation-menu.active{
+    display: block;
+  }
+  .oi{
+    position: absolute;
+    left: 250px;
+    top: 580px;
+  
+  }
+  .oi :hover{
+    color:rgba(40, 92, 161, 0.486);
+    text-decoration: none;
+  }
+  
+  .oi a{
+    display: inline-block;
+    padding: 0 50px;
+    color: rgb(40, 93, 161)
+  }
+  
+  .oi a:visited {
+    color: rgba(45, 66, 94, 0.596);
+  }
+  
+  .oi a:active {
+    color: rgb(99, 48, 47);
+  }
+  
+  .nomes{
+    position: absolute;
+    left: 520px;
+    top: 600px;
+  }
+  .nomes p{
+    display: inline-block;
+    padding: 0 60px;
+  }
+
+}
